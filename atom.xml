@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://weaponzhao.github.io/</id>
+    <title>WeaponZhao&apos;s Blog</title>
+    <updated>2019-10-11T11:02:48.523Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://weaponzhao.github.io/"/>
+    <link rel="self" href="https://weaponzhao.github.io//atom.xml"/>
+    <subtitle>在这里学到真正实用的技能</subtitle>
+    <logo>https://weaponzhao.github.io//images/avatar.png</logo>
+    <icon>https://weaponzhao.github.io//favicon.ico</icon>
+    <rights>All rights reserved 2019, WeaponZhao&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[修改Win10任务栏输入法托盘图标]]></title>
+        <id>https://weaponzhao.github.io//post/xiu-gai-win10-ren-wu-lan-shu-ru-fa-tuo-pan-tu-biao</id>
+        <link href="https://weaponzhao.github.io//post/xiu-gai-win10-ren-wu-lan-shu-ru-fa-tuo-pan-tu-biao">
+        </link>
+        <updated>2019-10-11T10:17:49.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>此修改方法适用于多种输入法，并不局限于作者（WeaponZhao）展示的输入法。</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>此修改方法适用于多种输入法，并不局限于作者（WeaponZhao）展示的输入法。</p>
+</blockquote>
+<!-- more -->
+<ol>
+<li>把<code>C:\WINDOWS\system32\SogouTSF.ime</code>或者<code>C:\WINDOWS\system32\BaiducnTSF.ime</code>复制到桌面。</li>
+<li>使用ResourceHacker打开<code>SogouTSF.ime</code>或者<code>BaiducnTSF.ime</code>文件，展开窗口左侧Tree（树状图），点击“图标组”子文件并记录右侧窗口显示的ico图标尺寸列表。</li>
+<li>使用IconWorkshop制作对应的ico文件（不懂的同学可以百度，最终生成一个包含各种尺寸图标的ico文件）。</li>
+<li>在ResourceHacker中“图标组”子文件上右击→替换图标→打开含新图标的文件→替换→保存。</li>
+<li>将<code>SogouTSF.ime</code>或者<code>BaiducnTSF.ime</code>文件重命名为<code>SogouTSF.ime.bac</code>或者<code>BaiducnTSF.ime.bac</code>,并将上一步保存的文件移动或复制到<code>C:\WINDOWS\system32\</code>目录下。</li>
+<li>重启资源管理器。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有道云笔记去广告]]></title>
+        <id>https://weaponzhao.github.io//post/you-dao-yun-bi-ji-qu-guang-gao</id>
+        <link href="https://weaponzhao.github.io//post/you-dao-yun-bi-ji-qu-guang-gao">
+        </link>
+        <updated>2019-10-11T10:15:28.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>天下没有免费的午餐，只有懂得付出的人</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>天下没有免费的午餐，只有懂得付出的人</p>
+</blockquote>
+<!-- more -->
+<ol>
+<li>现在有道云笔记6.X版本已不能通过删除panelad解决问题，只能修改panelad的属性来实现隐藏ad控件。</li>
+<li>具体的方法如下：
+<ul>
+<li>将安装目录下Youdao\YoudaoNote\theme文件夹下的build.xml文件复制到桌面并打开。</li>
+<li>删除panelad标签ass属性里的 panelclient</li>
+<li>将AdWraperMid标签的bounds值修改为0，0，0，0</li>
+<li>保存文件，再将build.xml复制回原来的文件夹，替换原来的文件，如果弹出需要管理员权限，直接同意即可。</li>
+</ul>
+</li>
+<li>至于右下角的弹窗广告，暂时还没有通过修改文件的方法来禁止。不过各种弹窗过滤软件都可以屏蔽，后期可以直接禁止时再更新方法。</li>
+</ol>
+]]></content>
+    </entry>
+</feed>

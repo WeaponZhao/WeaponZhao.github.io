@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>修改Win10任务栏输入法托盘图标 | WeaponZhao&#39;s Blog</title>
+<meta name="description" content="在这里学到真正实用的技能">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://weaponzhao.github.io//favicon.ico?v=1570791746577">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://weaponzhao.github.io//styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://weaponzhao.github.io/">
+        <img src="https://weaponzhao.github.io//images/avatar.png?v=1570791746577" class="site-logo">
+        <h1 class="site-title">WeaponZhao&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      在这里学到真正实用的技能
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://weaponzhao.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">修改Win10任务栏输入法托盘图标</h2>
+            <div class="post-date">2019-10-11</div>
+            
+              <div class="feature-container" style="background-image: url('https://weaponzhao.github.io//post-images/xiu-gai-win10-ren-wu-lan-shu-ru-fa-tuo-pan-tu-biao.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <blockquote>
+<p>此修改方法适用于多种输入法，并不局限于作者（WeaponZhao）展示的输入法。</p>
+</blockquote>
+<!-- more -->
+<ol>
+<li>把<code>C:\WINDOWS\system32\SogouTSF.ime</code>或者<code>C:\WINDOWS\system32\BaiducnTSF.ime</code>复制到桌面。</li>
+<li>使用ResourceHacker打开<code>SogouTSF.ime</code>或者<code>BaiducnTSF.ime</code>文件，展开窗口左侧Tree（树状图），点击“图标组”子文件并记录右侧窗口显示的ico图标尺寸列表。</li>
+<li>使用IconWorkshop制作对应的ico文件（不懂的同学可以百度，最终生成一个包含各种尺寸图标的ico文件）。</li>
+<li>在ResourceHacker中“图标组”子文件上右击→替换图标→打开含新图标的文件→替换→保存。</li>
+<li>将<code>SogouTSF.ime</code>或者<code>BaiducnTSF.ime</code>文件重命名为<code>SogouTSF.ime.bac</code>或者<code>BaiducnTSF.ime.bac</code>,并将上一步保存的文件移动或复制到<code>C:\WINDOWS\system32\</code>目录下。</li>
+<li>重启资源管理器。</li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://weaponzhao.github.io//tag/-kDFXH6Xs" class="tag">
+                    Windows
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://weaponzhao.github.io//post/you-dao-yun-bi-ji-qu-guang-gao">
+                  <h3 class="post-title">
+                    有道云笔记去广告
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'e05f256ff70cd04770bb',
+        clientSecret: 'af64367680fa4ede251e00419e5921ad326e9ad2',
+        repo: 'WeaponZhao.github.io',
+        owner: 'WeaponZhao',
+        admin: ['WeaponZhao'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
