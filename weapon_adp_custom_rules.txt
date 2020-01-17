@@ -1,0 +1,24 @@
+[Adblock Plus 2.0]
+! Checksum: a8TUanmCRcFxOtC6SiHwdg
+! Version: 202001171358
+! Title: WeaponZhao's Custom ADP Rules
+! Chinese supplement for the EasyList filters
+! Last Modified: 17 Jan 2020 05:23 UTC
+! Expires: 4 days (update frequency)
+! Homepage: https://weaponzhao.github.io/
+!
+!------------------------General element hiding rules-------------------------!
+blog.51cto.com##.group_img_box
+blog.51cto.com###topbanner14
+zhuanlan.zhihu.com##.AdblockBanner
+matools.com###topNav
+zmz2019.com##.chat-enterbox
+applex.net##center
+blog.csdn.net##.recommend-recommend-box
+blog.csdn.net##.blog-expert-recommend-box
+zh.wikipedia.org###asn-dismissable-notice
+taopic.com##table[align=center]
+pic.netbian.com##.photops
+pic.netbian.com##.page + div
+pic.netbian.com##.slist + div
+!----------------------------------The End------------------------------------!
