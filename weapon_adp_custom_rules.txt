@@ -21,4 +21,10 @@ taopic.com##table[align=center]
 pic.netbian.com##.photops
 pic.netbian.com##.page ~ div
 pic.netbian.com##.page + div
+iviewui.com##.ivu-alert.ivu-alert-warning.ivu-alert-with-icon.ivu-alert-with-desc.ivu-alert-with-banner
+cn.pornhub.com##.abAlertInner
+imooc.com###globalTopBanner
+imooc.com##.redrain-gif
+imooc.com###articleDetailRight
+imooc.com###articleReply
 !----------------------------------The End------------------------------------!
