@@ -19,6 +19,6 @@ blog.csdn.net##.blog-expert-recommend-box
 zh.wikipedia.org###asn-dismissable-notice
 taopic.com##table[align=center]
 pic.netbian.com##.photops
+pic.netbian.com##.page ~ div
 pic.netbian.com##.page + div
-pic.netbian.com##.slist + div
 !----------------------------------The End------------------------------------!
